@@ -1,6 +1,7 @@
 :root {
     --primary-color: #74C69D;
     --white-color: #FFFFFF;
+    --white-color-75: #ffffffc0;
     --dark-color: #212529;
     --dark-color-50: #21252980;
     --dark-color-25: #21252940;
@@ -62,6 +63,14 @@ h1 {
     border-radius: 5px;
 }
 
+.secondary-button {
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    border: none;
+    padding: 13px 30px 10px;
+    border-radius: 5px;
+}
+
 .header-section,
 .footer-section {
     background-color: var(--primary-color);
@@ -77,7 +86,29 @@ h1 {
     content: url('../img/burger-menu.png');
 }
 
-.footer-section {}
+.hero-section {
+    display: flex;
+    gap: 120px;
+    padding-bottom: 82px;
+}
+
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.hero-section-content h1 {
+    line-height: 125%;
+    letter-spacing: 2px;
+}
+
+.hero-section-content p {
+    color: var(--white-color-75);
+    font-size: 0.9;
+    font-size: 0.9375rem;
+}
 
 .footer-section-content {
     display: flex;
