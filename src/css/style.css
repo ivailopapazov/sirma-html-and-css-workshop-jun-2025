@@ -3,6 +3,7 @@
     --white-color: #FFFFFF;
     --white-color-75: #ffffffc0;
     --dark-color: #212529;
+    --dark-color-75: #212529c0;
     --dark-color-50: #21252980;
     --dark-color-25: #21252940;
 
@@ -40,6 +41,11 @@ h1 {
     letter-spacing: 2px;
 }
 
+h4 {
+    font-family: 'Crimson Text';
+    font-size: 1.5rem;
+}
+
 .body-regular {
     font-size: 0.9375rem;
 }
@@ -48,6 +54,11 @@ h1 {
     font-size: 1.25rem;
     font-family: 'Work Sans';
     line-height: 125%;
+}
+
+.box-shadow {
+    box-shadow: 3px 4px 12px 1px var(--dark-color-25);
+    ;
 }
 
 .label {
@@ -204,9 +215,6 @@ h1 {
     margin-bottom: 73px;
 }
 
-.landingpage-section-image {
-}
-
 .landingpage-section-image img {
     width: 100%;
 }
@@ -223,6 +231,40 @@ h1 {
     color: var(--dark-color-50);
     font-size: 0.9375rem;
 }
+
+.our-team {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* Team Cards */
+.team-section {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px 25px;
+}
+
+.team-card header {
+    padding: 0 13px;
+}
+
+.team-card p {
+    color: var(--dark-color-75);
+    font-size: 0.9375rem;
+}
+
 
 /* Service section */
 .service-section {
@@ -313,6 +355,11 @@ h1 {
         gap: 40px;
     }
 
+
+    .team-card header {
+        padding: 0;
+    }
+
     .section-content {
         width: 1000px;
     }
@@ -334,7 +381,17 @@ h1 {
     }
 
     .landingpage-section-content {
+
         max-width: 370px;
+    }
+
+    .team-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+
+    .team-card header {
+        padding: 0 13px;
     }
 
     .service-section {
@@ -381,6 +438,10 @@ h1 {
         grid-template-columns: 1fr;
     }
 
+    .team-section {
+        gap: 20px;
+    }
+
     .footer-section-content {
         flex-direction: column;
         align-items: center;
@@ -397,6 +458,11 @@ h1 {
     .learn-more,
     .portfolio-section {
         margin-bottom: 30px;
+    }
+    
+    .team-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .section-content {
