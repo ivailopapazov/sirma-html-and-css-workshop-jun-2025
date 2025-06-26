@@ -36,6 +36,8 @@ p {
 h1 {
     font-family: 'Crimson Text';
     font-size: 2.5rem;
+    line-height: 125%;
+    letter-spacing: 2px;
 }
 
 .body-regular {
@@ -122,10 +124,7 @@ h1 {
     align-items: flex-start;
 }
 
-.hero-section-content h1 {
-    line-height: 125%;
-    letter-spacing: 2px;
-}
+.hero-section-content h1 {}
 
 .hero-section-content p {
     color: var(--white-color-75);
@@ -133,9 +132,7 @@ h1 {
     font-size: 0.9375rem;
 }
 
-.hero-section-image {
-
-} 
+.hero-section-image {}
 
 .hero-section-image img {
     width: 100%;
@@ -196,6 +193,31 @@ h1 {
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.25rem;
+}
+
+/* Landing Page Section */
+.landingpage-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 73px;
+}
+
+.landingpage-section-image img {
+    width: 100%;
+}
+
+.landingpage-section-content {
+    max-width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.landingpage-section-content p {
+    color: var(--dark-color-50);
+    font-size: 0.9375rem;
 }
 
 /* Service section */
@@ -297,6 +319,12 @@ h1 {
         gap: 40px;
     }
 
+    .partners {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
     .service-section {
         flex-direction: column;
         align-items: center;
@@ -316,7 +344,7 @@ h1 {
     .hero-section .hero-section-image {
         grid-row-start: 1;
     }
-    
+
     .section-content {
         width: 560px;
     }
