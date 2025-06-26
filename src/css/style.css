@@ -198,9 +198,13 @@ h1 {
 /* Landing Page Section */
 .landingpage-section {
     display: flex;
+    gap: 40px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 73px;
+}
+
+.landingpage-section-image {
 }
 
 .landingpage-section-image img {
@@ -325,6 +329,14 @@ h1 {
         gap: 20px;
     }
 
+    .landingpage-section {
+        gap: 20px
+    }
+
+    .landingpage-section-content {
+        max-width: 370px;
+    }
+
     .service-section {
         flex-direction: column;
         align-items: center;
@@ -343,6 +355,14 @@ h1 {
 
     .hero-section .hero-section-image {
         grid-row-start: 1;
+    }
+
+    .landingpage-section {
+        flex-direction: column;
+    }
+
+    .our-services .landingpage-section-image {
+        order: -1;
     }
 
     .section-content {
